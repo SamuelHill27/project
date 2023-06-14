@@ -50,7 +50,7 @@ const ExpenseForm = (props) => {
       category: enteredCategory
     };
 
-    props.onSaveExpenseData(expenseData);
+    props.onSaveExpenseData(expenseData); // lifting the state up
 
     setEnteredTitle("");
     setEnteredAmount("");

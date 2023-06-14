@@ -1,0 +1,9 @@
+.date-filter-display {
+    display: flex;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    border-radius: 12px;
+    width: 50rem;
+    max-width: 95%;
+    padding-block: 1rem;
+}

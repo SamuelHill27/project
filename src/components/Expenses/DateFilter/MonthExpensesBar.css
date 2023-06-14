@@ -1,0 +1,13 @@
+.month-expenses-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#month-expenses-bar__bar {
+    border-radius: 12px;
+    width: 0.8rem;
+    height: 8rem;
+    background-color: rgb(200, 189, 233);
+    border: black 1px solid;
+}

@@ -8,7 +8,8 @@ const NewExpense = (props) => {
       ...enteredExpenseData,
       id: Math.random().toString()
     };
-    props.onAddExpense(expenseData);
+
+    props.onAddExpense(expenseData); // lifting the state up
   }
 
   return (
