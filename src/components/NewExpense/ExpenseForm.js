@@ -58,9 +58,14 @@ const ExpenseForm = (props) => {
     setEnteredCategory("");
   };
 
+  const resetHandler = () => {
+    props.onCancelExpenseData();
+  };
+
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} onReset={resetHandler}>
       <div className="new-expense__controls">
+
         <div className="new-expense__control">
           <label>Title</label>
           <input
@@ -69,6 +74,7 @@ const ExpenseForm = (props) => {
             onChange={titleChangeHandler}
           />
         </div>
+
         <div className="new-expense__control">
           <label>Amount</label>
           <input
@@ -79,6 +85,7 @@ const ExpenseForm = (props) => {
             onChange={amountChangeHandler}
           />
         </div>
+
         <div className="new-expense__control">
           <label>Date</label>
           <input
@@ -89,6 +96,7 @@ const ExpenseForm = (props) => {
             onChange={dateChangeHandler}
           />
         </div>
+
         <div className="new-expense__control">
           <label>Category</label>
           <input
@@ -97,9 +105,12 @@ const ExpenseForm = (props) => {
             onChange={categoryChangeHandler}
           />
         </div>
+
         <div className="new-expense__actions">
+          <button type="reset">Cancel</button>
           <button type="submit">Add Expense</button>
         </div>
+
       </div>
     </form>
   );

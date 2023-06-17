@@ -1,7 +1,7 @@
 import './DateFilterDisplay.css';
 import MonthExpensesBar from './MonthExpensesBar';
 
-const DateFilterDisplay = () => {
+const DateFilterDisplay = (props) => {
     return (
         <div className='date-filter-display'>
             <MonthExpensesBar />

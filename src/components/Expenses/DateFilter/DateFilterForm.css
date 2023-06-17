@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 1rem auto;
-    width: 45rem;
+    width: 50rem;
     max-width: 95%;
     font-size: 1.3rem;
     color: white;
@@ -13,4 +13,5 @@
 .date-filter-form__select {
     font-size: 1.1rem;
     padding: 0.3rem 2.5rem;
+    border-radius: 7px;
 }
