@@ -22,6 +22,7 @@ function Expenses(props) {
       <DateFilter
         selectedYear={filteredYear}
         onChangeFilter={filterChangeHandler}
+        expenses={filteredExpenses}
       />
       <ExpensesList items={filteredExpenses} />
     </Card>

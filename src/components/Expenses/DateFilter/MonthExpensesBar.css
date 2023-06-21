@@ -5,9 +5,17 @@
 }
 
 #month-expenses-bar__bar {
+    display: flex;
+    align-items: end;
     border-radius: 12px;
     width: 0.8rem;
     height: 8rem;
     background-color: rgb(200, 189, 233);
     border: black 1px solid;
+}
+
+#month-expenses-bar__value {
+    border-radius: 12px;
+    width: 0.8rem;
+    background-color: blueviolet;
 }

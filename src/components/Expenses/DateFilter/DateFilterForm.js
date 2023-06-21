@@ -9,7 +9,13 @@ const DateFilterForm = (props) => {
     <form>
       <div className="date-filter-form">
         <label htmlFor="years">Filter by year</label>
-        <select name="years" value={props.selectedYear} id="years" className="date-filter-form__select" onChange={dropdownChangeHandler}>
+        <select
+          name="years"
+          value={props.selectedYear}
+          id="years"
+          className="date-filter-form__select"
+          onChange={dropdownChangeHandler}
+        >
           <option value="2021">2021</option>
           <option value="2022">2022</option>
           <option value="2023">2023</option>
